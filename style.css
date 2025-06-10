@@ -393,8 +393,8 @@ html, body {
     height: 48vh;
 }
 #image22 {
-width: 4px;
-height: 46vh;
+    width: 4px;
+    height: 46vh;
 }
 #image33 {
     height: 47vh;
@@ -468,4 +468,340 @@ height: 46vh;
 }
 #page6_part2>button:hover {
     background-color: #E6C200;
+}
+
+/* Responsive Design for Tablets (max-width: 1023px) */
+@media screen and (max-width: 1023px) {
+    /* Nav Top */
+    #nav_top {
+        width: 100vw;
+        left: 0;
+        padding: 0 5vw;
+        height: 10vh;
+    }
+    #nav_top>img {
+        height: 40px;
+    }
+    #nav_top>button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    #nav_top>i {
+        display: block;
+        font-size: 5vw;
+    }
+
+    /* Nav Left */
+    #nav_left {
+        display: none;
+    }
+
+    /* Bottle Image */
+    #bottle {
+        height: 70vh;
+        left: 30%;
+    }
+
+    /* Page 1 */
+    #page1 h1 {
+        width: 80vw;
+        font-size: 15vw;
+        line-height: 15vw;
+    }
+    #page1_dog_image {
+        height: 12vh;
+        top: 20%;
+        left: 30%;
+    }
+
+    /* Page 2 */
+    #page2 {
+        flex-direction: column;
+        padding: 5vw;
+        height: auto;
+    }
+    #page2_part1 {
+        width: 90vw;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+    #page2_part1 h1 {
+        width: 100%;
+        font-size: 10vw;
+        line-height: 12vh;
+        height: auto;
+    }
+    #page2_part1>p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    #page2_part2 {
+        width: 90vw;
+        height: auto;
+        padding: 5vw;
+    }
+    #page2_part2 p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #box h2 {
+        font-size: 32px;
+    }
+    #box h2 span {
+        font-size: 24px;
+    }
+
+    /* Page 3 */
+    #page3 {
+        height: auto;
+        padding: 5vw;
+    }
+    #page3 h1 {
+        width: 100%;
+        font-size: 18vw;
+        line-height: 18vw;
+    }
+    #page3_text {
+        flex-direction: column;
+    }
+    #page3_text_part1 a img {
+        width: 90vw;
+    }
+    #page3_text_part1 h5 {
+        width: 90vw;
+        font-size: 3vw;
+    }
+    #page3_text_part2 {
+        width: 90vw;
+        padding: 5vw 0;
+    }
+    #page3_text_part2 h5 {
+        width: 100%;
+        font-size: 2.5vw;
+    }
+    #page3_text_part2 h2 {
+        font-size: 3vw;
+    }
+    #page3_text_part2 p {
+        font-size: 16px;
+    }
+
+    /* Page 4 */
+    #page4 {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    #page4_color_image1, #page4_color_image2, #page4_color_image3 {
+        width: 50vw;
+        margin: 5vh 0;
+    }
+    #page4_color_image1_text, #page4_color_image2_text, #page4_color_image3_text {
+        position: static;
+        width: 80vw;
+        text-align: center;
+    }
+    #page4_color_image1_text h4, #page4_color_image2_text h4, #page4_color_image3_text h4 {
+        width: 100%;
+        margin-left: 0;
+    }
+    #page4_color_image4 {
+        width: 40vw;
+        height: auto;
+        margin: 5vh 0;
+        transform: none;
+    }
+
+    /* Page 5 */
+    #page5 {
+        height: auto;
+        padding: 5vw;
+    }
+    #page5 h5 {
+        font-size: 4vw;
+    }
+    #page5 h1 {
+        width: 80vw;
+        font-size: 10vw;
+    }
+    #page5_image_box {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 5vw;
+        justify-content: center;
+    }
+    #page5_bottel {
+        width: 30vw;
+        height: auto;
+        margin: 2vw;
+    }
+    #page5_bottel img {
+        width: 100%;
+        height: auto;
+    }
+    #image11, #image22, #image33, #image44, #image55 {
+        height: auto;
+        transform: none;
+        opacity: 1;
+    }
+    #page5_bottel h4 {
+        font-size: 3vw;
+    }
+    #page5_bottel h6 {
+        font-size: 2.5vw;
+    }
+
+    /* Page 6 */
+    #page6 {
+        flex-direction: column;
+        height: auto;
+        padding: 5vw;
+    }
+    #page6 img {
+        width: 90vw;
+        height: auto;
+    }
+    #page6_part2 {
+        width: 90vw;
+        height: auto;
+        padding: 5vw 0;
+    }
+    #page6_part2 h5 {
+        font-size: 4vw;
+    }
+    #page6_part2 h1 {
+        width: 100%;
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+    #page6_part2 p {
+        font-size: 16px;
+    }
+    #page6_part2>button {
+        font-size: 3vw;
+        padding: 2vw 4vw;
+    }
+}
+
+/* Responsive Design for Mobile (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    /* Nav Top */
+    #nav_top {
+        height: 8vh;
+    }
+    #nav_top>img {
+        height: 30px;
+    }
+    #nav_top>button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    #nav_top>i {
+        font-size: 6vw;
+    }
+
+    /* Bottle Image */
+    #bottle {
+        height: 50vh;
+        left: 20%;
+    }
+
+    /* Page 1 */
+    #page1 h1 {
+        width: 90vw;
+        font-size: 18vw;
+        line-height: 18vw;
+    }
+    #page1_dog_image {
+        height: 10vh;
+        top: 25%;
+        left: 25%;
+    }
+
+    /* Page 2 */
+    #page2_part1 h1 {
+        font-size: 12vw;
+        line-height: 10vh;
+    }
+    #page2_part1>p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #page2_part1>button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    #page2_part2 {
+        padding: 6vw;
+    }
+    #page2_part2 p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #box h2 {
+        font-size: 28px;
+    }
+    #box h2 span {
+        font-size: 20px;
+    }
+
+    /* Page 3 */
+    #page3 h1 {
+        font-size: 20vw;
+        line-height: 20vw;
+    }
+    #page3_text_part1 h5 {
+        font-size: 4vw;
+    }
+    #page3_text_part2 h5 {
+        font-size: 3vw;
+    }
+    #page3_text_part2 h2 {
+        font-size: 4vw;
+    }
+    #page3_text_part2 p {
+        font-size: 14px;
+    }
+
+    /* Page 4 */
+    #page4_color_image1, #page4_color_image2, #page4_color_image3 {
+        width: 70vw;
+    }
+    #page4_color_image4 {
+        width: 50vw;
+    }
+
+    /* Page 5 */
+    #page5 h5 {
+        font-size: 5vw;
+    }
+    #page5 h1 {
+        font-size: 12vw;
+    }
+    #page5_bottel {
+        width: 40vw;
+    }
+    #page5_bottel h4 {
+        font-size: 4vw;
+    }
+    #page5_bottel h6 {
+        font-size: 3vw;
+    }
+
+    /* Page 6 */
+    #page6_part2 h5 {
+        font-size: 5vw;
+    }
+    #page6_part2 h1 {
+        font-size: 10vw;
+        line-height: 12vw;
+    }
+    #page6_part2 p {
+        font-size: 14px;
+    }
+    #page6_part2>button {
+        font-size: 4vw;
+        padding: 3vw 5vw;
+    }
 }
