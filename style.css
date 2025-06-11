@@ -22,10 +22,9 @@ html, body {
 
 /* Nav Top Css */
 #nav_top {
-    width: 94.2vw;
+    width: 100vw;
     height: 12vh;
     padding: 0 4.5vw 0 4vw;
-    left: 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,7 +151,7 @@ html, body {
     line-height: 24px;
     margin-bottom: 15px;
 }
-#page2_part1>button {
+#page2_part1>a>button {
     padding: 10px 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
