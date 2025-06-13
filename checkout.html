@@ -11,7 +11,8 @@
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            background: #ffffff;
+            color: #1a1a1a;
         }
         h1, h2, h3 {
             font-family: 'Playfair Display', serif;
@@ -20,61 +21,78 @@
             width: 112px;
             height: 64px;
         }
+        .gold-bg {
+            background-color: #d4af37;
+        }
+        .gold-text {
+            color: #d4af37;
+        }
+        .gold-hover:hover {
+            background-color: #b8972e;
+        }
+        .error-message {
+            display: none;
+        }
     </style>
 </head>
 <body>
-<nav class="flex items-center justify-between p-4 shadow-lg sticky top-0 z-50" style="background-color: #1A2A44;">
-    <img class="nav-logo w-24 sm:w-28" src="img/brewVibe.png" alt="Stellar Brew Logo">
-    <a href="index.html" class="text-base sm:text-lg font-semibold text-white hover:text-gray-200 transition-colors duration-300">Back to Home</a>
-</nav>
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between p-4 shadow-lg sticky top-0 z-50 bg-white">
+        <img class="nav-logo w-24 sm:w-28" src="img/brewVibe.png" alt="Stellar Brew Logo">
+        <div class="flex items-center space-x-4">
+            <a href="index.html" class="text-gray-800 hover:gold-text transition-colors duration-300 text-base sm:text-lg font-semibold">Back to Home</a>
+            <a href="shopnow.html" class="gold-text text-base sm:text-lg font-semibold">Shop</a>
+        </div>
+    </nav>
 
+    <!-- Checkout Container -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 max-w-6xl">
-        <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-8 sm:mb-12">Checkout</h1>
+        <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-8 sm:mb-12 animate-header">Checkout</h1>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             <!-- Billing Information -->
-            <div class="bg-white rounded-xl shadow-md p-6 sm:p-8">
+            <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 animate-form">
                 <h2 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-6">Billing Information</h2>
                 <form id="checkout-form" class="space-y-6">
-                    <div>
+                    <div class="form-field">
                         <label for="full-name" class="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
-                        <input type="text" id="full-name" name="full-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 transition-colors" required>
-                        <span class="error-message text-red-500 text-sm mt-1 hidden" id="full-name-error">Please enter your full name.</span>
+                        <input type="text" id="full-name" name="full-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-text focus:border-gold-text transition-colors" required>
+                        <span class="error-message text-red-500 text-sm mt-1" id="full-name-error">Please enter your full name.</span>
                     </div>
-                    <div>
+                    <div class="form-field">
                         <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
-                        <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 transition-colors" required>
-                        <span class="error-message text-red-500 text-sm mt-1 hidden" id="email-error">Please enter a valid email address.</span>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-text focus:border-gold-text transition-colors" required>
+                        <span class="error-message text-red-500 text-sm mt-1" id="email-error">Please enter a valid email address.</span>
                     </div>
-                    <div>
+                    <div class="form-field">
                         <label for="address" class="block text-sm font-semibold text-gray-700 mb-2">Shipping Address</label>
-                        <input type="text" id="address" name="address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 transition-colors" required>
-                        <span class="error-message text-red-500 text-sm mt-1 hidden" id="address-error">Please enter your shipping address.</span>
+                        <input type="text" id="address" name="address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-text focus:border-gold-text transition-colors" required>
+                        <span class="error-message text-red-500 text-sm mt-1" id="address-error">Please enter your shipping address.</span>
                     </div>
-                    <div>
+                    <div class="form-field">
                         <label for="city" class="block text-sm font-semibold text-gray-700 mb-2">City</label>
-                        <input type="text" id="city" name="city" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 transition-colors" required>
-                        <span class="error-message text-red-500 text-sm mt-1 hidden" id="city-error">Please enter your city.</span>
+                        <input type="text" id="city" name="city" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-text focus:border-gold-text transition-colors" required>
+                        <span class="error-message text-red-500 text-sm mt-1" id="city-error">Please enter your city.</span>
                     </div>
-                    <div>
+                    <div class="form-field">
                         <label for="zip" class="block text-sm font-semibold text-gray-700 mb-2">Zip Code</label>
-                        <input type="text" id="zip" name="zip" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 transition-colors" required>
-                        <span class="error-message text-red-500 text-sm mt-1 hidden" id="zip-error">Please enter a valid zip code.</span>
+                        <input type="text" id="zip" name="zip" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-text focus:border-gold-text transition-colors" required>
+                        <span class="error-message text-red-500 text-sm mt-1" id="zip-error">Please enter a valid zip code.</span>
                     </div>
-                    <div>
+                    <div class="form-field">
                         <label for="payment-method" class="block text-sm font-semibold text-gray-700 mb-2">Payment Method</label>
-                        <select id="payment-method" name="payment-method" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 transition-colors" required>
+                        <select id="payment-method" name="payment-method" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-text focus:border-gold-text transition-colors" required>
                             <option value="" disabled selected>Select Payment Method</option>
                             <option value="credit-card">Credit Card</option>
                             <option value="paypal">PayPal</option>
                             <option value="bank-transfer">Bank Transfer</option>
                         </select>
-                        <span class="error-message text-red-500 text-sm mt-1 hidden" id="payment-method-error">Please select a payment method.</span>
+                        <span class="error-message text-red-500 text-sm mt-1" id="payment-method-error">Please select a payment method.</span>
                     </div>
                 </form>
             </div>
 
             <!-- Order Summary -->
-            <div class="bg-white rounded-xl shadow-md p-6 sm:p-8">
+            <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 animate-summary">
                 <h2 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-6">Order Summary</h2>
                 <div class="space-y-4">
                     <div class="flex justify-between text-gray-600">
@@ -90,11 +108,69 @@
                         <span>$17.99</span>
                     </div>
                 </div>
-                <button id="place-order" class="mt-8 w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors duration-300">Place Order</button>
+                <button id="place-order" class="mt-8 w-full gold-bg gold-hover text-white py-3 rounded-lg font-semibold transition-colors duration-300">Place Order</button>
             </div>
         </div>
     </div>
 
-    <script src="checkout.js"></script>
+    <!-- GSAP and JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // GSAP Animations
+        gsap.from(".animate-header", {
+            opacity: 0,
+            y: -50,
+            duration: 1,
+            ease: "power3.out"
+        });
+
+        gsap.from(".animate-form", {
+            opacity: 0,
+            x: -100,
+            duration: 1,
+            delay: 0.3,
+            ease: "power3.out"
+        });
+
+        gsap.from(".animate-summary", {
+            opacity: 0,
+            x: 100,
+            duration: 1,
+            delay: 0.3,
+            ease: "power3.out"
+        });
+
+        gsap.from(".form-field", {
+            opacity: 0,
+            y: 20,
+            duration: 0.8,
+            stagger: 0.2,
+            delay: 0.6,
+            ease: "power3.out"
+        });
+
+        // Basic Form Validation
+        document.getElementById("place-order").addEventListener("click", function(e) {
+            e.preventDefault();
+            const fields = ["full-name", "email", "address", "city", "zip", "payment-method"];
+            let valid = true;
+
+            fields.forEach(field => {
+                const input = document.getElementById(field);
+                const error = document.getElementById(`${field}-error`);
+                if (!input.value || (field === "payment-method" && input.value === "")) {
+                    error.style.display = "block";
+                    valid = false;
+                    gsap.from(error, { opacity: 0, y: -10, duration: 0.5 });
+                } else {
+                    error.style.display = "none";
+                }
+            });
+
+            if (valid) {
+                alert("Order placed successfully!");
+            }
+        });
+    </script>
 </body>
 </html>
